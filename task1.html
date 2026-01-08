@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form>
+    <!-- Student Name -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Age -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="1" required><br><br>
+
+    <!-- Course using datalist -->
+    <label for="course">Course:</label><br>
+    <input list="courseList" id="course" name="course" required>
+    <datalist id="courseList">
+        <option value="Computer Science">
+        <option value="Information Technology">
+        <option value="Electronics and Communication">
+        <option value="Mechanical Engineering">
+    </datalist><br><br>
+
+    <!-- Submit -->
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
